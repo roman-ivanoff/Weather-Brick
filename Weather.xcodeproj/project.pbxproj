@@ -56,15 +56,31 @@
 		FD4E43D82883EE78003AE173 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				FD4E43D92883EE78003AE173 /* AppDelegate.swift */,
-				FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */,
+				FD4E43EE2883EE9E003AE173 /* Resources */,
+				FD4E43ED2883EE8B003AE173 /* Supporting Files */,
 				FD4E43DD2883EE78003AE173 /* ViewController.swift */,
 				FD4E43DF2883EE78003AE173 /* Main.storyboard */,
-				FD4E43E22883EE7A003AE173 /* Assets.xcassets */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		FD4E43ED2883EE8B003AE173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD4E43D92883EE78003AE173 /* AppDelegate.swift */,
+				FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */,
 				FD4E43E42883EE7A003AE173 /* LaunchScreen.storyboard */,
 				FD4E43E72883EE7A003AE173 /* Info.plist */,
 			);
-			path = Weather;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD4E43EE2883EE9E003AE173 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD4E43E22883EE7A003AE173 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,10 +304,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "Weather/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,7 +320,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,10 +332,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Weather/Info.plist;
+				INFOPLIST_FILE = "Weather/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +348,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
