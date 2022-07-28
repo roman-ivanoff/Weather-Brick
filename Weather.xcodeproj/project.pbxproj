@@ -13,6 +13,7 @@
 		FD4E43E12883EE78003AE173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4E43DF2883EE78003AE173 /* Main.storyboard */; };
 		FD4E43E32883EE7A003AE173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4E43E22883EE7A003AE173 /* Assets.xcassets */; };
 		FD4E43E62883EE7A003AE173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4E43E42883EE7A003AE173 /* LaunchScreen.storyboard */; };
+		FD5816D728927C4000B982BE /* WeatherCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816D628927C4000B982BE /* WeatherCountry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FD4E43E22883EE7A003AE173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD4E43E52883EE7A003AE173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD4E43E72883EE7A003AE173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5816D628927C4000B982BE /* WeatherCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCountry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FD4E43D82883EE78003AE173 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				FD5816D528927C1500B982BE /* Models */,
 				FD4E43EE2883EE9E003AE173 /* Resources */,
 				FD4E43ED2883EE8B003AE173 /* Supporting Files */,
 				FD4E43DD2883EE78003AE173 /* ViewController.swift */,
@@ -81,6 +84,14 @@
 				FD4E43E22883EE7A003AE173 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD5816D528927C1500B982BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD5816D628927C4000B982BE /* WeatherCountry.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				FD4E43DE2883EE78003AE173 /* ViewController.swift in Sources */,
 				FD4E43DA2883EE78003AE173 /* AppDelegate.swift in Sources */,
 				FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */,
+				FD5816D728927C4000B982BE /* WeatherCountry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
