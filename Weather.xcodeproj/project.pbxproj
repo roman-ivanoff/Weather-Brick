@@ -18,6 +18,7 @@
 		FD5816DB28927C7100B982BE /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816DA28927C7100B982BE /* WeatherInfo.swift */; };
 		FD5816DD28927C8F00B982BE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816DC28927C8F00B982BE /* Weather.swift */; };
 		FD5816DF28927CAB00B982BE /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816DE28927CAB00B982BE /* Coordinates.swift */; };
+		FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816E028927CC500B982BE /* OpenWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FD5816DA28927C7100B982BE /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		FD5816DC28927C8F00B982BE /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		FD5816DE28927CAB00B982BE /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		FD5816E028927CC500B982BE /* OpenWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FD5816DA28927C7100B982BE /* WeatherInfo.swift */,
 				FD5816DC28927C8F00B982BE /* Weather.swift */,
 				FD5816DE28927CAB00B982BE /* Coordinates.swift */,
+				FD5816E028927CC500B982BE /* OpenWeather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				FD4E43DA2883EE78003AE173 /* AppDelegate.swift in Sources */,
 				FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */,
 				FD5816D728927C4000B982BE /* WeatherCountry.swift in Sources */,
+				FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */,
 				FD5816DD28927C8F00B982BE /* Weather.swift in Sources */,
 				FD5816DF28927CAB00B982BE /* Coordinates.swift in Sources */,
 			);
