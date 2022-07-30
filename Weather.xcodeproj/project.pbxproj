@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD0EB7E228952A5C005F8CFD /* LocationErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0EB7E128952A5C005F8CFD /* LocationErrorProtocol.swift */; };
+		FD0EB7E428952A73005F8CFD /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0EB7E328952A73005F8CFD /* LocationError.swift */; };
 		FD4E43DA2883EE78003AE173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43D92883EE78003AE173 /* AppDelegate.swift */; };
 		FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */; };
 		FD4E43DE2883EE78003AE173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43DD2883EE78003AE173 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD0EB7E128952A5C005F8CFD /* LocationErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorProtocol.swift; sourceTree = "<group>"; };
+		FD0EB7E328952A73005F8CFD /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
 		FD4E43D62883EE78003AE173 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4E43D92883EE78003AE173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0EB7DF28952A31005F8CFD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FD0EB7E128952A5C005F8CFD /* LocationErrorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FD0EB7E028952A3B005F8CFD /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				FD0EB7E328952A73005F8CFD /* LocationError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		FD4E43CD2883EE78003AE173 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +90,8 @@
 		FD4E43D82883EE78003AE173 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				FD0EB7E028952A3B005F8CFD /* Errors */,
+				FD0EB7DF28952A31005F8CFD /* Protocols */,
 				FD92D5362893DF6700188DB4 /* Services */,
 				FD5816D528927C1500B982BE /* Models */,
 				FD4E43EE2883EE9E003AE173 /* Resources */,
@@ -199,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0EB7E228952A5C005F8CFD /* LocationErrorProtocol.swift in Sources */,
 				FD4E43DE2883EE78003AE173 /* ViewController.swift in Sources */,
 				FD5816D928927C5A00B982BE /* Wind.swift in Sources */,
 				FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */,
@@ -207,6 +230,7 @@
 				FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */,
 				FD5816D728927C4000B982BE /* WeatherCountry.swift in Sources */,
 				FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */,
+				FD0EB7E428952A73005F8CFD /* LocationError.swift in Sources */,
 				FD5816DD28927C8F00B982BE /* Weather.swift in Sources */,
 				FD5816DF28927CAB00B982BE /* Coordinates.swift in Sources */,
 			);
