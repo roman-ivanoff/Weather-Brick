@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD0EB7E228952A5C005F8CFD /* LocationErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0EB7E128952A5C005F8CFD /* LocationErrorProtocol.swift */; };
 		FD0EB7E428952A73005F8CFD /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0EB7E328952A73005F8CFD /* LocationError.swift */; };
 		FD4E43DA2883EE78003AE173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43D92883EE78003AE173 /* AppDelegate.swift */; };
 		FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */; };
@@ -25,7 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FD0EB7E128952A5C005F8CFD /* LocationErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorProtocol.swift; sourceTree = "<group>"; };
 		FD0EB7E328952A73005F8CFD /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
 		FD4E43D62883EE78003AE173 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4E43D92883EE78003AE173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 		FD0EB7DF28952A31005F8CFD /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				FD0EB7E128952A5C005F8CFD /* LocationErrorProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0EB7E228952A5C005F8CFD /* LocationErrorProtocol.swift in Sources */,
 				FD4E43DE2883EE78003AE173 /* ViewController.swift in Sources */,
 				FD5816D928927C5A00B982BE /* Wind.swift in Sources */,
 				FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */,
