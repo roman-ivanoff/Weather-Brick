@@ -21,6 +21,7 @@
 		FD5816DF28927CAB00B982BE /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816DE28927CAB00B982BE /* Coordinates.swift */; };
 		FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816E028927CC500B982BE /* OpenWeather.swift */; };
 		FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92D5382893DF8000188DB4 /* QueryService.swift */; };
+		FDBCF9BC28AE421800873BDC /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCF9BB28AE421800873BDC /* LocationObserver.swift */; };
 		FDC7874728ACDAE300F8CBED /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7874628ACDAE300F8CBED /* GradientButton.swift */; };
 		FDC7874A28ACDB2B00F8CBED /* UIColor+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7874928ACDB2B00F8CBED /* UIColor+Functional.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		FD5816DE28927CAB00B982BE /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		FD5816E028927CC500B982BE /* OpenWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeather.swift; sourceTree = "<group>"; };
 		FD92D5382893DF8000188DB4 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		FDBCF9BB28AE421800873BDC /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
 		FDC7874628ACDAE300F8CBED /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		FDC7874928ACDB2B00F8CBED /* UIColor+Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Functional.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 		FD0EB7DF28952A31005F8CFD /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FDBCF9BB28AE421800873BDC /* LocationObserver.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				FDC7874728ACDAE300F8CBED /* GradientButton.swift in Sources */,
 				FD5816D928927C5A00B982BE /* Wind.swift in Sources */,
 				FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */,
+				FDBCF9BC28AE421800873BDC /* LocationObserver.swift in Sources */,
 				FD5816DB28927C7100B982BE /* WeatherInfo.swift in Sources */,
 				FD4E43DA2883EE78003AE173 /* AppDelegate.swift in Sources */,
 				FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */,
