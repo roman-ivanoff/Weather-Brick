@@ -22,6 +22,7 @@
 		FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816E028927CC500B982BE /* OpenWeather.swift */; };
 		FD82424728AEBA1800AAE9CE /* DegreeSymbolFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424628AEBA1800AAE9CE /* DegreeSymbolFormatter.swift */; };
 		FD82424928AEBA7200AAE9CE /* WeatherBrickProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424828AEBA7200AAE9CE /* WeatherBrickProtocol.swift */; };
+		FD82424B28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424A28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift */; };
 		FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92D5382893DF8000188DB4 /* QueryService.swift */; };
 		FDBCF9BC28AE421800873BDC /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCF9BB28AE421800873BDC /* LocationObserver.swift */; };
 		FDC7874728ACDAE300F8CBED /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7874628ACDAE300F8CBED /* GradientButton.swift */; };
@@ -46,6 +47,7 @@
 		FD5816E028927CC500B982BE /* OpenWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeather.swift; sourceTree = "<group>"; };
 		FD82424628AEBA1800AAE9CE /* DegreeSymbolFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeSymbolFormatter.swift; sourceTree = "<group>"; };
 		FD82424828AEBA7200AAE9CE /* WeatherBrickProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBrickProtocol.swift; sourceTree = "<group>"; };
+		FD82424A28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBrickDelegate.swift; sourceTree = "<group>"; };
 		FD92D5382893DF8000188DB4 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
 		FDBCF9BB28AE421800873BDC /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
 		FDC7874628ACDAE300F8CBED /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				FDBCF9BB28AE421800873BDC /* LocationObserver.swift */,
 				FD82424828AEBA7200AAE9CE /* WeatherBrickProtocol.swift */,
+				FD82424A28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				FD82424728AEBA1800AAE9CE /* DegreeSymbolFormatter.swift in Sources */,
 				FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */,
 				FD0EB7E428952A73005F8CFD /* LocationError.swift in Sources */,
+				FD82424B28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift in Sources */,
 				FD5816DD28927C8F00B982BE /* Weather.swift in Sources */,
 				FD5816DF28927CAB00B982BE /* Coordinates.swift in Sources */,
 			);
