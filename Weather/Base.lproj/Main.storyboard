@@ -19,13 +19,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_background" translatesAutoresizingMaskIntoConstraints="NO" id="tnb-iY-lfP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_stone_normal" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-qz-Lcv">
+                                <rect key="frame" x="95" y="0.0" width="224" height="455"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="455" id="SVz-sF-AcJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="tnb-iY-lfP" secondAttribute="trailing" id="9GD-SY-OEs"/>
+                            <constraint firstItem="XTi-qz-Lcv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ATF-DT-tVy"/>
                             <constraint firstItem="tnb-iY-lfP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Inf-3f-uJE"/>
                             <constraint firstAttribute="bottom" secondItem="tnb-iY-lfP" secondAttribute="bottom" id="YoN-6q-LW5"/>
+                            <constraint firstItem="XTi-qz-Lcv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="jEV-Tq-qWm"/>
+                            <constraint firstItem="XTi-qz-Lcv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jmw-fP-oO9"/>
                             <constraint firstItem="tnb-iY-lfP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mEn-2X-h1k"/>
                         </constraints>
                     </view>
@@ -37,8 +46,9 @@
     </scenes>
     <resources>
         <image name="image_background" width="375" height="811"/>
+        <image name="image_stone_normal" width="224" height="455"/>
         <systemColor name="systemBackgroundColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
