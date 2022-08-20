@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: - IBOutlets
     @IBOutlet weak var brickImage: UIImageView!
     @IBOutlet weak var infoButton: GradientButton!
     @IBOutlet weak var errorLabel: UILabel!
@@ -17,7 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var locationStackView: UIStackView!
-    
+
+    // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
 
