@@ -25,19 +25,32 @@
                                     <constraint firstAttribute="height" constant="455" id="SVz-sF-AcJ"/>
                                 </constraints>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-pv-p8e">
+                                <rect key="frame" x="16" y="64" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bKi-pv-p8e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4cF-Ta-8Qx"/>
                             <constraint firstAttribute="trailing" secondItem="tnb-iY-lfP" secondAttribute="trailing" id="9GD-SY-OEs"/>
                             <constraint firstItem="XTi-qz-Lcv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ATF-DT-tVy"/>
                             <constraint firstItem="tnb-iY-lfP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Inf-3f-uJE"/>
                             <constraint firstAttribute="bottom" secondItem="tnb-iY-lfP" secondAttribute="bottom" id="YoN-6q-LW5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKi-pv-p8e" secondAttribute="trailing" constant="16" id="aHO-Qx-Z3d"/>
                             <constraint firstItem="XTi-qz-Lcv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="jEV-Tq-qWm"/>
                             <constraint firstItem="XTi-qz-Lcv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jmw-fP-oO9"/>
                             <constraint firstItem="tnb-iY-lfP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mEn-2X-h1k"/>
+                            <constraint firstItem="bKi-pv-p8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yAE-hD-9f3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="brickImage" destination="XTi-qz-Lcv" id="jhr-w9-zOe"/>
+                        <outlet property="errorLabel" destination="bKi-pv-p8e" id="vPT-EE-k6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

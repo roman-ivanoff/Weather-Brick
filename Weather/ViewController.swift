@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var brickImage: UIImageView!
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
