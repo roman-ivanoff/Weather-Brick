@@ -31,6 +31,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZF-gx-xM5" customClass="GradientButton" customModule="Weather" customModuleProvider="target">
+                                <rect key="frame" x="100" y="827" width="214" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="BPK-P9-nc7"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="INFO">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -39,10 +50,13 @@
                             <constraint firstAttribute="trailing" secondItem="tnb-iY-lfP" secondAttribute="trailing" id="9GD-SY-OEs"/>
                             <constraint firstItem="XTi-qz-Lcv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ATF-DT-tVy"/>
                             <constraint firstItem="tnb-iY-lfP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Inf-3f-uJE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZF-gx-xM5" secondAttribute="trailing" constant="100" id="WkF-up-15C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WZF-gx-xM5" secondAttribute="bottom" constant="-50" id="Yb2-60-GD0"/>
                             <constraint firstAttribute="bottom" secondItem="tnb-iY-lfP" secondAttribute="bottom" id="YoN-6q-LW5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKi-pv-p8e" secondAttribute="trailing" constant="16" id="aHO-Qx-Z3d"/>
                             <constraint firstItem="XTi-qz-Lcv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="jEV-Tq-qWm"/>
                             <constraint firstItem="XTi-qz-Lcv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jmw-fP-oO9"/>
+                            <constraint firstItem="WZF-gx-xM5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="jyb-eg-i52"/>
                             <constraint firstItem="tnb-iY-lfP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mEn-2X-h1k"/>
                             <constraint firstItem="bKi-pv-p8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yAE-hD-9f3"/>
                         </constraints>
@@ -50,6 +64,7 @@
                     <connections>
                         <outlet property="brickImage" destination="XTi-qz-Lcv" id="jhr-w9-zOe"/>
                         <outlet property="errorLabel" destination="bKi-pv-p8e" id="vPT-EE-k6R"/>
+                        <outlet property="infoButton" destination="WZF-gx-xM5" id="sRL-gG-aqh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
