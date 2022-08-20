@@ -26,7 +26,7 @@
                                 </constraints>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-pv-p8e">
-                                <rect key="frame" x="16" y="64" width="382" height="21"/>
+                                <rect key="frame" x="16" y="64" width="382" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -43,17 +43,48 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-La-G3q">
-                                <rect key="frame" x="16" y="485" width="382" height="100"/>
+                                <rect key="frame" x="16" y="485" width="382" height="99.5"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="83"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-tV-TLy">
-                                <rect key="frame" x="16" y="595" width="382" height="43"/>
+                                <rect key="frame" x="16" y="594.5" width="382" height="43"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tne-YK-cvW">
+                                <rect key="frame" x="128" y="784" width="158" height="16"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYx-se-8RZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="5Tb-85-W66"/>
+                                            <constraint firstAttribute="height" constant="16" id="LcC-tQ-wKx"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="location" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krakow, Poland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-3B-NNh">
+                                        <rect key="frame" x="21" y="0.0" width="116" height="16"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD5-VX-RsI">
+                                        <rect key="frame" x="142" y="0.0" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="Avn-ds-aVv"/>
+                                            <constraint firstAttribute="height" constant="16" id="xlw-zl-nqK"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -62,8 +93,10 @@
                             <constraint firstAttribute="trailing" secondItem="tnb-iY-lfP" secondAttribute="trailing" id="9GD-SY-OEs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uT8-tV-TLy" secondAttribute="trailing" constant="16" id="9xa-En-hbR"/>
                             <constraint firstItem="XTi-qz-Lcv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ATF-DT-tVy"/>
+                            <constraint firstItem="WZF-gx-xM5" firstAttribute="top" secondItem="Tne-YK-cvW" secondAttribute="bottom" constant="27" id="FIb-Tg-T5c"/>
                             <constraint firstItem="tnb-iY-lfP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Inf-3f-uJE"/>
                             <constraint firstItem="uT8-tV-TLy" firstAttribute="top" secondItem="0mB-La-G3q" secondAttribute="bottom" constant="10" id="Kwq-3C-tmE"/>
+                            <constraint firstItem="Tne-YK-cvW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SSB-vQ-VnZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WZF-gx-xM5" secondAttribute="trailing" constant="100" id="WkF-up-15C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WZF-gx-xM5" secondAttribute="bottom" constant="-50" id="Yb2-60-GD0"/>
                             <constraint firstAttribute="bottom" secondItem="tnb-iY-lfP" secondAttribute="bottom" id="YoN-6q-LW5"/>
@@ -83,6 +116,10 @@
                         <outlet property="brickImage" destination="XTi-qz-Lcv" id="jhr-w9-zOe"/>
                         <outlet property="errorLabel" destination="bKi-pv-p8e" id="vPT-EE-k6R"/>
                         <outlet property="infoButton" destination="WZF-gx-xM5" id="sRL-gG-aqh"/>
+                        <outlet property="locationButton" destination="hYx-se-8RZ" id="x6P-IQ-2Gl"/>
+                        <outlet property="locationLabel" destination="hHh-3B-NNh" id="P5Q-mx-W9I"/>
+                        <outlet property="locationStackView" destination="Tne-YK-cvW" id="32u-JG-nPY"/>
+                        <outlet property="searchButton" destination="sD5-VX-RsI" id="glt-tB-2y4"/>
                         <outlet property="tempLabel" destination="0mB-La-G3q" id="FxF-io-0xk"/>
                         <outlet property="weatherLabel" destination="uT8-tV-TLy" id="bga-um-rCF"/>
                     </connections>
@@ -95,6 +132,8 @@
     <resources>
         <image name="image_background" width="375" height="811"/>
         <image name="image_stone_normal" width="224" height="455"/>
+        <image name="location" catalog="system" width="128" height="118"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
