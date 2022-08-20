@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var brickImage: UIImageView!
     @IBOutlet weak var infoButton: GradientButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var weatherLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
