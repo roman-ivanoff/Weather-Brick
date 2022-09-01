@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct WeatherCountry: Codable {
+struct WeatherCountry: Codable, Equatable {
     let country: String
 }
