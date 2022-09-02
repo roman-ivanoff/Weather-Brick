@@ -132,10 +132,12 @@
                         <outlet property="brickImage" destination="XTi-qz-Lcv" id="jhr-w9-zOe"/>
                         <outlet property="errorLabel" destination="bKi-pv-p8e" id="vPT-EE-k6R"/>
                         <outlet property="infoButton" destination="WZF-gx-xM5" id="sRL-gG-aqh"/>
+                        <outlet property="infoView" destination="nVg-G7-5j3" id="Q29-gN-3cl"/>
                         <outlet property="locationButton" destination="hYx-se-8RZ" id="x6P-IQ-2Gl"/>
                         <outlet property="locationLabel" destination="hHh-3B-NNh" id="P5Q-mx-W9I"/>
                         <outlet property="locationStackView" destination="Tne-YK-cvW" id="32u-JG-nPY"/>
                         <outlet property="searchButton" destination="sD5-VX-RsI" id="glt-tB-2y4"/>
+                        <outlet property="shadowView" destination="eEf-4a-KaT" id="dmw-kj-uEV"/>
                         <outlet property="tempLabel" destination="0mB-La-G3q" id="FxF-io-0xk"/>
                         <outlet property="weatherLabel" destination="uT8-tV-TLy" id="bga-um-rCF"/>
                     </connections>

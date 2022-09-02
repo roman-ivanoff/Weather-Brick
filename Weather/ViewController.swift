@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var locationStackView: UIStackView!
-
+    @IBOutlet weak var shadowView: UIView!
+    @IBOutlet weak var infoView: UIView!
+    
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
