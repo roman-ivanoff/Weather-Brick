@@ -85,11 +85,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEf-4a-KaT">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEf-4a-KaT">
                                 <rect key="frame" x="57" y="220" width="308" height="457"/>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.37254901960784315" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVg-G7-5j3">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVg-G7-5j3">
                                 <rect key="frame" x="49" y="220" width="308" height="457"/>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
