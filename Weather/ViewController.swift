@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setInfoView()
         infoButton.layer.cornerRadius = 15
     }

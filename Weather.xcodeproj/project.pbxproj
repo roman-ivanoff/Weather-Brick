@@ -25,6 +25,7 @@
 		FD82424B28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424A28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift */; };
 		FD82424D28AEBAC500AAE9CE /* LocationErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424C28AEBAC500AAE9CE /* LocationErrorProtocol.swift */; };
 		FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92D5382893DF8000188DB4 /* QueryService.swift */; };
+		FDA02BF428C674C3004FF9B8 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = FDA02BF328C674C3004FF9B8 /* Fonts */; };
 		FDBCF9BC28AE421800873BDC /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCF9BB28AE421800873BDC /* LocationObserver.swift */; };
 		FDC7874728ACDAE300F8CBED /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7874628ACDAE300F8CBED /* GradientButton.swift */; };
 		FDC7874A28ACDB2B00F8CBED /* UIColor+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7874928ACDB2B00F8CBED /* UIColor+Functional.swift */; };
@@ -51,6 +52,7 @@
 		FD82424A28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBrickDelegate.swift; sourceTree = "<group>"; };
 		FD82424C28AEBAC500AAE9CE /* LocationErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorProtocol.swift; sourceTree = "<group>"; };
 		FD92D5382893DF8000188DB4 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
+		FDA02BF328C674C3004FF9B8 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		FDBCF9BB28AE421800873BDC /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
 		FDC7874628ACDAE300F8CBED /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		FDC7874928ACDB2B00F8CBED /* UIColor+Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Functional.swift"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		FD4E43EE2883EE9E003AE173 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FDA02BF328C674C3004FF9B8 /* Fonts */,
 				FD4E43E22883EE7A003AE173 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -245,6 +248,7 @@
 				FD4E43E62883EE7A003AE173 /* LaunchScreen.storyboard in Resources */,
 				FD4E43E32883EE7A003AE173 /* Assets.xcassets in Resources */,
 				FD4E43E12883EE78003AE173 /* Main.storyboard in Resources */,
+				FDA02BF428C674C3004FF9B8 /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
