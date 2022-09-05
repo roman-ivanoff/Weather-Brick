@@ -12,6 +12,9 @@
         <array key="SF-Pro-Display-Light.otf">
             <string>SFProDisplay-Light</string>
         </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -45,10 +48,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="BPK-P9-nc7"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="INFO">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="showInfoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xO-K6-Omd"/>
@@ -64,12 +68,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-tV-TLy">
                                 <rect key="frame" x="16" y="594.5" width="382" height="43"/>
                                 <accessibility key="accessibilityConfiguration" identifier="weatherLabel"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="36"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="36"/>
+                                <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tne-YK-cvW">
-                                <rect key="frame" x="128" y="784" width="158" height="16"/>
+                                <rect key="frame" x="134" y="784" width="146.5" height="16"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYx-se-8RZ">
                                         <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
@@ -83,14 +87,14 @@
                                         <buttonConfiguration key="configuration" style="plain" image="location" catalog="system"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krakow, Poland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-3B-NNh">
-                                        <rect key="frame" x="21" y="0.0" width="116" height="16"/>
+                                        <rect key="frame" x="21" y="0.0" width="104.5" height="16"/>
                                         <accessibility key="accessibilityConfiguration" identifier="locationLabel"/>
-                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
+                                        <color key="textColor" name="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD5-VX-RsI">
-                                        <rect key="frame" x="142" y="0.0" width="16" height="16"/>
+                                        <rect key="frame" x="130.5" y="0.0" width="16" height="16"/>
                                         <accessibility key="accessibilityConfiguration" identifier="searchButton"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="16" id="Avn-ds-aVv"/>
@@ -113,12 +117,12 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLD-hh-fT7">
                                         <rect key="frame" x="134" y="24" width="40.5" height="21.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="infoViewLabel"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                                        <color key="textColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NSD-bh-3Rh">
-                                        <rect key="frame" x="30" y="61.5" width="256" height="324.5"/>
+                                        <rect key="frame" x="30" y="61.5" width="256" height="325.5"/>
                                         <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="infoTextView"/>
                                         <string key="text">Brick is wet - raining
@@ -127,16 +131,19 @@ Brick is hard to see - fog
 Brick with cracks - very hot Brick with snow - snow 
 Brick is swinging- windy 
 Brick is gone - No Internet</string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" name="textColor"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jF-q5-0qq">
-                                        <rect key="frame" x="127" y="402" width="54" height="31"/>
+                                        <rect key="frame" x="81" y="403" width="154" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="hideButton"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="15"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Hide"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Hide">
+                                            <color key="titleColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="hideInfoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3JL-QQ-v4J"/>
                                         </connections>
@@ -148,9 +155,10 @@ Brick is gone - No Internet</string>
                                     <constraint firstItem="0jF-q5-0qq" firstAttribute="top" secondItem="NSD-bh-3Rh" secondAttribute="bottom" constant="16" id="6oi-Kn-sGf"/>
                                     <constraint firstItem="zLD-hh-fT7" firstAttribute="top" secondItem="nVg-G7-5j3" secondAttribute="top" constant="24" id="9D3-4S-NwT"/>
                                     <constraint firstItem="NSD-bh-3Rh" firstAttribute="top" secondItem="zLD-hh-fT7" secondAttribute="bottom" constant="16" id="AW7-9w-fjV"/>
-                                    <constraint firstItem="0jF-q5-0qq" firstAttribute="centerX" secondItem="nVg-G7-5j3" secondAttribute="centerX" id="S2A-S2-wcR"/>
+                                    <constraint firstItem="0jF-q5-0qq" firstAttribute="leading" secondItem="nVg-G7-5j3" secondAttribute="leading" constant="81" id="CKU-sU-bmK"/>
                                     <constraint firstAttribute="bottom" secondItem="0jF-q5-0qq" secondAttribute="bottom" constant="24" id="T0n-yB-9d3"/>
                                     <constraint firstItem="zLD-hh-fT7" firstAttribute="centerX" secondItem="nVg-G7-5j3" secondAttribute="centerX" id="m4k-6x-wa4"/>
+                                    <constraint firstAttribute="trailing" secondItem="0jF-q5-0qq" secondAttribute="trailing" constant="73" id="mtB-If-3mY"/>
                                     <constraint firstAttribute="trailing" secondItem="NSD-bh-3Rh" secondAttribute="trailing" constant="22" id="pP4-eY-TjG"/>
                                     <constraint firstItem="NSD-bh-3Rh" firstAttribute="leading" secondItem="nVg-G7-5j3" secondAttribute="leading" constant="30" id="tdB-9z-u5u"/>
                                 </constraints>
@@ -221,9 +229,6 @@ Brick is gone - No Internet</string>
         <namedColor name="textColor">
             <color red="0.17599999904632568" green="0.17599999904632568" blue="0.17599999904632568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
