@@ -44,6 +44,9 @@
                                 <state key="normal" title="INFO">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="showInfoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9xO-K6-Omd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-La-G3q">
                                 <rect key="frame" x="16" y="485" width="382" height="99.5"/>
@@ -128,6 +131,9 @@ Brick is gone - No Internet</string>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Hide"/>
+                                        <connections>
+                                            <action selector="hideInfoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3JL-QQ-v4J"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
@@ -185,6 +191,7 @@ Brick is gone - No Internet</string>
                         <outlet property="errorLabel" destination="bKi-pv-p8e" id="vPT-EE-k6R"/>
                         <outlet property="hideButton" destination="0jF-q5-0qq" id="LKM-Bf-dWc"/>
                         <outlet property="infoButton" destination="WZF-gx-xM5" id="sRL-gG-aqh"/>
+                        <outlet property="infoTextView" destination="NSD-bh-3Rh" id="7ZS-aN-PcF"/>
                         <outlet property="infoView" destination="nVg-G7-5j3" id="Q29-gN-3cl"/>
                         <outlet property="locationButton" destination="hYx-se-8RZ" id="x6P-IQ-2Gl"/>
                         <outlet property="locationLabel" destination="hHh-3B-NNh" id="P5Q-mx-W9I"/>
