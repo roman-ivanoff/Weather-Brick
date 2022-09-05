@@ -91,7 +91,19 @@
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVg-G7-5j3">
                                 <rect key="frame" x="49" y="220" width="308" height="457"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLD-hh-fT7">
+                                        <rect key="frame" x="134" y="24" width="40.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zLD-hh-fT7" firstAttribute="top" secondItem="nVg-G7-5j3" secondAttribute="top" constant="24" id="9D3-4S-NwT"/>
+                                    <constraint firstItem="zLD-hh-fT7" firstAttribute="centerX" secondItem="nVg-G7-5j3" secondAttribute="centerX" id="m4k-6x-wa4"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
