@@ -98,10 +98,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jF-q5-0qq">
+                                        <rect key="frame" x="127" y="402" width="54" height="31"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Hide"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="zLD-hh-fT7" firstAttribute="top" secondItem="nVg-G7-5j3" secondAttribute="top" constant="24" id="9D3-4S-NwT"/>
+                                    <constraint firstItem="0jF-q5-0qq" firstAttribute="centerX" secondItem="nVg-G7-5j3" secondAttribute="centerX" id="S2A-S2-wcR"/>
+                                    <constraint firstAttribute="bottom" secondItem="0jF-q5-0qq" secondAttribute="bottom" constant="24" id="T0n-yB-9d3"/>
                                     <constraint firstItem="zLD-hh-fT7" firstAttribute="centerX" secondItem="nVg-G7-5j3" secondAttribute="centerX" id="m4k-6x-wa4"/>
                                 </constraints>
                             </view>
