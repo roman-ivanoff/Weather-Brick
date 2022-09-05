@@ -21,18 +21,21 @@
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_stone_normal" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-qz-Lcv">
                                 <rect key="frame" x="95" y="0.0" width="224" height="455"/>
+                                <accessibility key="accessibilityConfiguration" identifier="brickImage"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="455" id="SVz-sF-AcJ"/>
                                 </constraints>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-pv-p8e">
                                 <rect key="frame" x="16" y="64" width="382" height="20.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="errorLabel"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZF-gx-xM5" customClass="GradientButton" customModule="Weather" customModuleProvider="target">
                                 <rect key="frame" x="100" y="827" width="214" height="85"/>
+                                <accessibility key="accessibilityConfiguration" identifier="infoButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="BPK-P9-nc7"/>
                                 </constraints>
@@ -44,12 +47,14 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mB-La-G3q">
                                 <rect key="frame" x="16" y="485" width="382" height="99.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tempLabel"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="83"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sunny" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-tV-TLy">
                                 <rect key="frame" x="16" y="594.5" width="382" height="43"/>
+                                <accessibility key="accessibilityConfiguration" identifier="weatherLabel"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -59,6 +64,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYx-se-8RZ">
                                         <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="locationButton"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="16" id="5Tb-85-W66"/>
                                             <constraint firstAttribute="height" constant="16" id="LcC-tQ-wKx"/>
@@ -69,12 +75,14 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krakow, Poland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHh-3B-NNh">
                                         <rect key="frame" x="21" y="0.0" width="116" height="16"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="locationLabel"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sD5-VX-RsI">
                                         <rect key="frame" x="142" y="0.0" width="16" height="16"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="searchButton"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="16" id="Avn-ds-aVv"/>
                                             <constraint firstAttribute="height" constant="16" id="xlw-zl-nqK"/>
@@ -88,12 +96,14 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEf-4a-KaT">
                                 <rect key="frame" x="57" y="220" width="308" height="457"/>
                                 <color key="backgroundColor" red="0.98431372549019602" green="0.37254901960784315" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="shadowView"/>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVg-G7-5j3">
                                 <rect key="frame" x="49" y="220" width="308" height="457"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLD-hh-fT7">
                                         <rect key="frame" x="134" y="24" width="40.5" height="21.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="infoViewLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -101,6 +111,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NSD-bh-3Rh">
                                         <rect key="frame" x="30" y="61.5" width="256" height="324.5"/>
                                         <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="infoTextView"/>
                                         <string key="text">Brick is wet - raining
 Brick is dry - sunny 
 Brick is hard to see - fog 
@@ -113,12 +124,14 @@ Brick is gone - No Internet</string>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jF-q5-0qq">
                                         <rect key="frame" x="127" y="402" width="54" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="hideButton"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Hide"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="infoView"/>
                                 <constraints>
                                     <constraint firstItem="0jF-q5-0qq" firstAttribute="top" secondItem="NSD-bh-3Rh" secondAttribute="bottom" constant="16" id="6oi-Kn-sGf"/>
                                     <constraint firstItem="zLD-hh-fT7" firstAttribute="top" secondItem="nVg-G7-5j3" secondAttribute="top" constant="24" id="9D3-4S-NwT"/>
