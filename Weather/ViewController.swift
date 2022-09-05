@@ -20,7 +20,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var locationStackView: UIStackView!
     @IBOutlet weak var shadowView: UIView!
     @IBOutlet weak var infoView: UIView!
-    
+    @IBOutlet weak var hideButton: UIButton!
+    @IBOutlet weak var cBrickImageTop: NSLayoutConstraint!
+    @IBOutlet weak var cBrickImageHeight: NSLayoutConstraint!
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()

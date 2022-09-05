@@ -180,7 +180,10 @@ Brick is gone - No Internet</string>
                     </view>
                     <connections>
                         <outlet property="brickImage" destination="XTi-qz-Lcv" id="jhr-w9-zOe"/>
+                        <outlet property="cBrickImageHeight" destination="SVz-sF-AcJ" id="Oob-J7-nZR"/>
+                        <outlet property="cBrickImageTop" destination="ATF-DT-tVy" id="sJZ-eN-4xz"/>
                         <outlet property="errorLabel" destination="bKi-pv-p8e" id="vPT-EE-k6R"/>
+                        <outlet property="hideButton" destination="0jF-q5-0qq" id="LKM-Bf-dWc"/>
                         <outlet property="infoButton" destination="WZF-gx-xM5" id="sRL-gG-aqh"/>
                         <outlet property="infoView" destination="nVg-G7-5j3" id="Q29-gN-3cl"/>
                         <outlet property="locationButton" destination="hYx-se-8RZ" id="x6P-IQ-2Gl"/>
