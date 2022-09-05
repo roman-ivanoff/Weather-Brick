@@ -23,6 +23,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var hideButton: UIButton!
     @IBOutlet weak var cBrickImageTop: NSLayoutConstraint!
     @IBOutlet weak var cBrickImageHeight: NSLayoutConstraint!
+
+    private var brickHeightConstant: CGFloat = 0
+    private var isAnimationFinished = false
+    private var heightForUpdate: CGFloat = 150
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
