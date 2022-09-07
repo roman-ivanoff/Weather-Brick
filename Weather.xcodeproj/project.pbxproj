@@ -20,6 +20,7 @@
 		FD5816DD28927C8F00B982BE /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816DC28927C8F00B982BE /* Weather.swift */; };
 		FD5816DF28927CAB00B982BE /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816DE28927CAB00B982BE /* Coordinates.swift */; };
 		FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5816E028927CC500B982BE /* OpenWeather.swift */; };
+		FD716E0828C896F200C895BF /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD716E0728C896F200C895BF /* LocationService.swift */; };
 		FD82424728AEBA1800AAE9CE /* DegreeSymbolFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424628AEBA1800AAE9CE /* DegreeSymbolFormatter.swift */; };
 		FD82424928AEBA7200AAE9CE /* WeatherBrickProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424828AEBA7200AAE9CE /* WeatherBrickProtocol.swift */; };
 		FD82424B28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424A28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift */; };
@@ -47,6 +48,7 @@
 		FD5816DC28927C8F00B982BE /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		FD5816DE28927CAB00B982BE /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		FD5816E028927CC500B982BE /* OpenWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeather.swift; sourceTree = "<group>"; };
+		FD716E0728C896F200C895BF /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		FD82424628AEBA1800AAE9CE /* DegreeSymbolFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeSymbolFormatter.swift; sourceTree = "<group>"; };
 		FD82424828AEBA7200AAE9CE /* WeatherBrickProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBrickProtocol.swift; sourceTree = "<group>"; };
 		FD82424A28AEBA9F00AAE9CE /* WeatherBrickDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBrickDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FD92D5372893DF6E00188DB4 /* Networking */,
+				FD716E0728C896F200C895BF /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				FD5816D928927C5A00B982BE /* Wind.swift in Sources */,
 				FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */,
 				FDBCF9BC28AE421800873BDC /* LocationObserver.swift in Sources */,
+				FD716E0828C896F200C895BF /* LocationService.swift in Sources */,
 				FD5816DB28927C7100B982BE /* WeatherInfo.swift in Sources */,
 				FD4E43DA2883EE78003AE173 /* AppDelegate.swift in Sources */,
 				FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */,
