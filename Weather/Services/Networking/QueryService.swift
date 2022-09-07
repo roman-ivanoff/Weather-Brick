@@ -13,12 +13,57 @@ enum WeatherError: Error {
 }
 
 class QueryService {
-    let session = URLSession(configuration: .default)
+    var session: URLSession
     let link = "https://api.openweathermap.org/data/2.5/weather"
-    let apiKey = "151c855c063f34c1d6734cea30dc5d5d"
+    let apiKey = "306323172c79e995cf092b53477fe2dc"
     var dataTask: URLSessionDataTask?
 
+    init(session: URLSession = URLSession(configuration: .default)) {
+        self.session = session
+    }
+
     func getWeather(lat: String, lon: String, completion: @escaping(Result<OpenWeather, WeatherError>) -> Void) {
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("mock") {
+            let sampleOpenWeatherData = OpenWeather(
+                coord: Coordinates(lon: -122.08, lat: 37.39),
+                weather: [Weather(id: 1, main: "Clear", description: "clear sky")],
+                main: WeatherInfo(temp: 282.55, humidity: 100),
+                visibility: 10000,
+                wind: Wind(speed: 1.5, deg: 300),
+                sys: WeatherCountry(country: "US"),
+                name: "Mountain View",
+                cod: 200
+            )
+
+            DispatchQueue.main.async {
+                completion(.success(sampleOpenWeatherData))
+            }
+
+            return
+        }
+
+        if ProcessInfo.processInfo.arguments.contains("animation") {
+            let sampleOpenWeatherData = OpenWeather(
+                coord: Coordinates(lon: -122.08, lat: 37.39),
+                weather: [Weather(id: 1, main: "Clear", description: "clear sky")],
+                main: WeatherInfo(temp: 282.55, humidity: 100),
+                visibility: 10000,
+                wind: Wind(speed: 11.5, deg: 300),
+                sys: WeatherCountry(country: "US"),
+                name: "Mountain View",
+                cod: 200
+            )
+
+            DispatchQueue.main.async {
+                completion(.success(sampleOpenWeatherData))
+            }
+
+            return
+        }
+        #endif
+
+        dataTask?.cancel()
         if var urlComponents = URLComponents(string: link) {
             urlComponents.queryItems = [
                 URLQueryItem(name: "lat", value: lat),
