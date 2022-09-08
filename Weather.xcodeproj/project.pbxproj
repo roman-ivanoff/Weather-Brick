@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD0EB7E428952A73005F8CFD /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0EB7E328952A73005F8CFD /* LocationError.swift */; };
+		FD3CF2C728C9F3C300F86975 /* Applyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3CF2C628C9F3C300F86975 /* Applyable.swift */; };
 		FD4E43DA2883EE78003AE173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43D92883EE78003AE173 /* AppDelegate.swift */; };
 		FD4E43DC2883EE78003AE173 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */; };
 		FD4E43DE2883EE78003AE173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4E43DD2883EE78003AE173 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		FD0EB7E328952A73005F8CFD /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		FD3CF2C628C9F3C300F86975 /* Applyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applyable.swift; sourceTree = "<group>"; };
 		FD4E43D62883EE78003AE173 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4E43D92883EE78003AE173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				FD4E43DB2883EE78003AE173 /* SceneDelegate.swift */,
 				FD4E43E42883EE7A003AE173 /* LaunchScreen.storyboard */,
 				FD4E43E72883EE7A003AE173 /* Info.plist */,
+				FD3CF2C628C9F3C300F86975 /* Applyable.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				FDC7874728ACDAE300F8CBED /* GradientButton.swift in Sources */,
 				FD82424928AEBA7200AAE9CE /* WeatherBrickProtocol.swift in Sources */,
 				FD5816D928927C5A00B982BE /* Wind.swift in Sources */,
+				FD3CF2C728C9F3C300F86975 /* Applyable.swift in Sources */,
 				FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */,
 				FDBCF9BC28AE421800873BDC /* LocationObserver.swift in Sources */,
 				FD716E0828C896F200C895BF /* LocationService.swift in Sources */,
