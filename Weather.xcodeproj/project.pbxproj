@@ -31,6 +31,7 @@
 		FD82424D28AEBAC500AAE9CE /* LocationErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD82424C28AEBAC500AAE9CE /* LocationErrorProtocol.swift */; };
 		FD92D5392893DF8000188DB4 /* QueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD92D5382893DF8000188DB4 /* QueryService.swift */; };
 		FDA02BF428C674C3004FF9B8 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = FDA02BF328C674C3004FF9B8 /* Fonts */; };
+		FDA2ADDF28CBBD6D000E87BD /* WeatherBrick.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2ADDE28CBBD6D000E87BD /* WeatherBrick.swift */; };
 		FDBCF9BC28AE421800873BDC /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBCF9BB28AE421800873BDC /* LocationObserver.swift */; };
 		FDC7874728ACDAE300F8CBED /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7874628ACDAE300F8CBED /* GradientButton.swift */; };
 		FDC7874A28ACDB2B00F8CBED /* UIColor+Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC7874928ACDB2B00F8CBED /* UIColor+Functional.swift */; };
@@ -63,6 +64,7 @@
 		FD82424C28AEBAC500AAE9CE /* LocationErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationErrorProtocol.swift; sourceTree = "<group>"; };
 		FD92D5382893DF8000188DB4 /* QueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryService.swift; sourceTree = "<group>"; };
 		FDA02BF328C674C3004FF9B8 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		FDA2ADDE28CBBD6D000E87BD /* WeatherBrick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBrick.swift; sourceTree = "<group>"; };
 		FDBCF9BB28AE421800873BDC /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
 		FDC7874628ACDAE300F8CBED /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		FDC7874928ACDB2B00F8CBED /* UIColor+Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Functional.swift"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				FD5816DC28927C8F00B982BE /* Weather.swift */,
 				FD5816DE28927CAB00B982BE /* Coordinates.swift */,
 				FD5816E028927CC500B982BE /* OpenWeather.swift */,
+				FDA2ADDE28CBBD6D000E87BD /* WeatherBrick.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				FD82424D28AEBAC500AAE9CE /* LocationErrorProtocol.swift in Sources */,
 				FDC7874A28ACDB2B00F8CBED /* UIColor+Functional.swift in Sources */,
 				FD5816D728927C4000B982BE /* WeatherCountry.swift in Sources */,
+				FDA2ADDF28CBBD6D000E87BD /* WeatherBrick.swift in Sources */,
 				FD82424728AEBA1800AAE9CE /* DegreeSymbolFormatter.swift in Sources */,
 				FD3CF2C928C9F42400F86975 /* UIView+Functional.swift in Sources */,
 				FD5816E128927CC500B982BE /* OpenWeather.swift in Sources */,
