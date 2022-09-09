@@ -62,4 +62,23 @@ class WeatherBrick {
     func updateError(error: Error) {
         delegate?.weatherBrick(self, errorOccured: error)
     }
+
+    private func setStates() {
+        isHot = weather?.main.temp ?? 0 > hotTempInKelvin
+        isFoggy = weather?.visibility ?? 0 > fogVisibility
+        isWindy = weather?.wind.speed ?? 0 > windSpeed
+
+        switch weather?.weather[0].main {
+        case "Clouds":
+            brickState = .clouds
+        case "Clear":
+            brickState = isHot ? .hot : .sunny
+        case "Rain":
+            brickState = .rain
+        case "Snow":
+            brickState = .snow
+        default:
+            brickState = .unknown
+        }
+    }
 }
