@@ -17,7 +17,7 @@ enum WeatherBrickState {
     case unknown
 }
 
-class WeatherBrick {
+class WeatherBrick: LocationObserver, WeatherBrickProtocol {
     var delegate: WeatherBrickDelegate?
     let hotTempInKelvin = 302.15 // 29 celcius
     let fogVisibility = 1000
