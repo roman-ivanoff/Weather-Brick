@@ -81,4 +81,25 @@ class WeatherBrick {
             brickState = .unknown
         }
     }
+
+    func getWeather() {
+        guard let location = locationService.location else {
+            locationService.requestLocation()
+            return
+        }
+        let lat = String(location.coordinate.latitude)
+        let lon = String(location.coordinate.longitude)
+
+        self.queryService.getWeather(lat: lat, lon: lon) { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            switch result {
+            case .failure(let error):
+                self.delegate?.weatherBrick(self, errorOccured: error)
+            case .success(let weather):
+                self.weather = weather
+            }
+        }
+    }
 }
