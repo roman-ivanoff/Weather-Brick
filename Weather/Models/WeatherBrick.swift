@@ -46,4 +46,20 @@ class WeatherBrick {
 
         locationService.requestLocation()
     }
+
+    func updateLocation(location: CLLocation) {
+        self.currentLocation = location
+        updateWeatherAtCurrentLocation()
+    }
+
+    func updateWeatherAtCurrentLocation() {
+        delegate?.weatherBrick(self, didUpdate: weather)
+        DispatchQueue.main.async {
+            self.getWeather()
+        }
+    }
+
+    func updateError(error: Error) {
+        delegate?.weatherBrick(self, errorOccured: error)
+    }
 }
