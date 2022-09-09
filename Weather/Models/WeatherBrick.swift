@@ -18,5 +18,26 @@ enum WeatherBrickState {
 }
 
 class WeatherBrick {
+    var delegate: WeatherBrickDelegate?
+    let hotTempInKelvin = 302.15 // 29 celcius
+    let fogVisibility = 1000
+    let windSpeed = 10.0
 
+    var isWindy = false
+    var isFoggy = false
+    var isHot = false
+
+    let queue = DispatchQueue(label: "ViewController operation execution queue")
+    var brickState: WeatherBrickState = .sunny
+
+    let locationService = LocationService()
+    var currentLocation: CLLocation?
+    let queryService = QueryService()
+    private(set) var weather: OpenWeather? {
+        didSet {
+            delegate?.weatherBrick(self, didUpdate: weather)
+            setStates()
+        }
+    }
+    var error: String?
 }
