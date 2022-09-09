@@ -6,7 +6,17 @@
 //
 
 import Foundation
+import CoreLocation
+
+enum WeatherBrickState {
+    case rain
+    case sunny
+    case snow
+    case clouds
+    case hot
+    case unknown
+}
 
 class WeatherBrick {
-    
+
 }
