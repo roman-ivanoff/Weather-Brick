@@ -40,4 +40,10 @@ class WeatherBrick {
         }
     }
     var error: String?
+
+    init() {
+        locationService.registerObserver(observer: self)
+
+        locationService.requestLocation()
+    }
 }
