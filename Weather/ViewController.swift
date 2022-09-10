@@ -96,6 +96,27 @@ class ViewController: UIViewController {
         self.brickImage.isHidden = false
     }
 
+    private func animateBrick() {
+        cBrickImageTop.constant = -cBrickImageHeight.constant / 2
+        brickImage.layer.anchorPoint = CGPoint(x: 0.5, y: 0.0)
+        brickImage.accessibilityValue = "animation"
+
+        UIView.animate(withDuration: 1, delay: 0, options: .beginFromCurrentState) { [brickImage] in
+            brickImage?.transform = CGAffineTransform(rotationAngle: 0.2)
+        } completion: { [self] _ in
+            UIView.animate(
+                withDuration: 2,
+                delay: 0,
+                options: [.beginFromCurrentState, .repeat, .autoreverse, .allowUserInteraction]
+            ) { [self] in
+                self.isAnimationFinished = false
+                self.brickImage?.transform = CGAffineTransform(rotationAngle: -0.2)
+            } completion: { [self] _ in
+                self.isAnimationFinished = true
+            }
+        }
+    }
+
     private func clearAll() {
         DispatchQueue.main.async {
             self.tempLabel.text = ""
