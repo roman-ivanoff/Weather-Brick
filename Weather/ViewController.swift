@@ -24,10 +24,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var cBrickImageTop: NSLayoutConstraint!
     @IBOutlet weak var cBrickImageHeight: NSLayoutConstraint!
     @IBOutlet weak var infoTextView: UITextView!
-    
+    var weather: OpenWeather?
+    let weatherBrick = WeatherBrick()
     private var brickHeightConstant: CGFloat = 0
     private var isAnimationFinished = false
     private var heightForUpdate: CGFloat = 150
+
     // MARK: - Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,3 +107,39 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: WeatherBrickDelegate {
+    func weatherBrick(_ weatherModel: WeatherBrickProtocol, willUpdate weather: OpenWeather?) {
+        clearAll()
+    }
+
+    func weatherBrick(_ weatherModel: WeatherBrickProtocol, didUpdate weather: OpenWeather?) {
+        guard let weather = weather else {
+            clearAll()
+            return
+        }
+
+        DispatchQueue.main.async {
+            self.errorLabel.isHidden = true
+            self.tempLabel.text = DegreeSymbolFormatter.addDegreeSymbol(weather.main.temp)
+            self.tempLabel.isHidden = false
+            self.weatherLabel.text = weather.weather[0].main.lowercased()
+            self.weatherLabel.isHidden = false
+            self.locationLabel.text = "\(weather.name), \(weather.sys.country)"
+            self.locationStackView.isHidden = false
+            self.updateBrickImage()
+        }
+    }
+
+    func weatherBrick(_ weatherModel: WeatherBrickProtocol, errorOccured error: Error) {
+        clearAll()
+        func showError() {
+            errorLabel.text = error.localizedDescription
+            errorLabel.isHidden = false
+        }
+        if Thread.current.isMainThread {
+            showError()
+        } else {
+            showError()
+        }
+    }
+}
