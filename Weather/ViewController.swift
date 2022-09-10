@@ -37,6 +37,10 @@ class ViewController: UIViewController {
         infoButton.layer.cornerRadius = 15
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
     private func setInfoView() {
         infoView.layer.cornerRadius = 15
 
