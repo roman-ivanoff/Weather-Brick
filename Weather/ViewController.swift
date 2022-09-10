@@ -68,6 +68,15 @@ class ViewController: UIViewController {
         hideButton.layer.borderColor = UIColor(hexString: "#575757").cgColor
     }
 
+    private func clearAll() {
+        DispatchQueue.main.async {
+            self.tempLabel.text = ""
+            self.weatherLabel.text = ""
+            self.locationLabel.text = ""
+            self.brickImage.isHidden = true
+        }
+    }
+
     @IBAction func hideInfoAction(_ sender: UIButton) {
         UIView.transition(
             with: self.view,
