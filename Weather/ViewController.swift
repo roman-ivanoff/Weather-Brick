@@ -68,6 +68,34 @@ class ViewController: UIViewController {
         hideButton.layer.borderColor = UIColor(hexString: "#575757").cgColor
     }
 
+    func updateBrickImage() {
+        switch self.weatherBrick.brickState {
+        case .rain:
+            self.brickImage.image = UIImage(named: "image_stone_wet")
+        case .sunny:
+            self.brickImage.image = UIImage(named: "image_stone_normal")
+        case .snow:
+            self.brickImage.image = UIImage(named: "image_stone_snow")
+        case .clouds:
+            self.brickImage.image = UIImage(named: "image_stone_normal")
+            self.brickImage.alpha = 0.7
+        case .hot:
+            self.brickImage.image = UIImage(named: "image_stone_cracks")
+        case .unknown:
+            self.brickImage.image = UIImage(named: "image_stone_normal")
+        }
+
+        if self.weatherBrick.isWindy {
+            animateBrick()
+        }
+
+        if weatherBrick.brickState != .clouds {
+            self.brickImage.alpha = self.weatherBrick.isFoggy ? 0.6 : 1
+        }
+
+        self.brickImage.isHidden = false
+    }
+
     private func clearAll() {
         DispatchQueue.main.async {
             self.tempLabel.text = ""
