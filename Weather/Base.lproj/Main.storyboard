@@ -28,7 +28,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_background" translatesAutoresizingMaskIntoConstraints="NO" id="tnb-iY-lfP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_stone_normal" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-qz-Lcv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_stone_normal" translatesAutoresizingMaskIntoConstraints="NO" id="XTi-qz-Lcv">
                                 <rect key="frame" x="95" y="0.0" width="224" height="455"/>
                                 <accessibility key="accessibilityConfiguration" identifier="brickImage"/>
                                 <constraints>

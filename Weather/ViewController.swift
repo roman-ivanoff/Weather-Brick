@@ -35,11 +35,48 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setInfoView()
         infoButton.layer.cornerRadius = 15
+
+//        weatherBrick.delegate = self
+
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleBrickPan(_:)))
+        brickImage.addGestureRecognizer(panGesture)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         weatherBrick.updateWeatherAtCurrentLocation()
+    }
+
+    @objc func handleBrickPan(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .began:
+            brickHeightConstant = cBrickImageHeight.constant
+            brickImage.transform = .identity
+            if isAnimationFinished {
+                brickImage.layer.removeAllAnimations()
+                brickImage.layer.anchorPoint = .init(x: 0.5, y: 0.5)
+                cBrickImageTop.constant = 0
+            }
+        case .changed:
+            let translationY = sender.translation(in: view).y
+            cBrickImageHeight.constant = brickHeightConstant + translationY
+            if translationY > heightForUpdate {
+                weatherBrick.updateWeatherAtCurrentLocation()
+                sender.isEnabled = false
+                sender.isEnabled = true
+            }
+        case .ended, .cancelled, .failed:
+            cBrickImageHeight.constant = brickHeightConstant
+            UIView.animate(withDuration: 1, delay: 0, options: []) { [self] in
+                view.layoutIfNeeded()
+            } completion: { [self] _ in
+                if weatherBrick.isWindy {
+                    animateBrick()
+                }
+            }
+        default:
+            break
+        }
     }
 
     private func setInfoView() {
