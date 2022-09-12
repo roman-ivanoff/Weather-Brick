@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         setInfoView()
         infoButton.layer.cornerRadius = 15
 
-//        weatherBrick.delegate = self
+        weatherBrick.delegate = self
 
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleBrickPan(_:)))
         brickImage.addGestureRecognizer(panGesture)

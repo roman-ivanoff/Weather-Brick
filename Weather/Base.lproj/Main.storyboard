@@ -223,7 +223,7 @@ Brick is gone - No Internet</string>
     </scenes>
     <resources>
         <image name="image_background" width="375" height="811"/>
-        <image name="image_stone_normal" width="224" height="455"/>
+        <image name="image_stone_normal" width="224" height="377.5"/>
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="textColor">

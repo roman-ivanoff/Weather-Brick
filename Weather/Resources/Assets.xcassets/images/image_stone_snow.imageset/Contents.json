@@ -3,16 +3,49 @@
     {
       "filename" : "image_stone_snow.png",
       "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 270,
+          "top" : 154
+        },
+        "center" : {
+          "height" : 10,
+          "mode" : "tile"
+        },
+        "mode" : "3-part-vertical"
+      },
       "scale" : "1x"
     },
     {
       "filename" : "image_stone_snow@2x.png",
       "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 435,
+          "top" : 300
+        },
+        "center" : {
+          "height" : 20,
+          "mode" : "tile"
+        },
+        "mode" : "3-part-vertical"
+      },
       "scale" : "2x"
     },
     {
       "filename" : "image_stone_snow@3x.png",
       "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 915,
+          "top" : 400
+        },
+        "center" : {
+          "height" : 30,
+          "mode" : "tile"
+        },
+        "mode" : "3-part-vertical"
+      },
       "scale" : "3x"
     }
   ],
